@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShowDown</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="img/logo.png" alt="ShowDown Logo">
+        <h2>Inicio de Sesión</h2>
+
+        <!-- Mensaje de error -->
+        <div id="error-message" class="error-message"></div>
+
+        <!-- Formulario de Login -->
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button class="login-btn" onclick="login()">Ingresar</button>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenido a ShowDown!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cards-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="ShowDown Logo">
+            </div>
+            <h2>Cartas</h2>
+            <div class="cards" id="card-container">
+            </div>
+        </div>
+
+        <div>
+            <table id="card-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Carta</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div class="form-container">
+                <div class="form">
+                    <label for="card-number">Registro de cartas</label>
+                    <input type="text" id="card-number" placeholder="Número">
+                    <input type="text" id="card-name" placeholder="Carta">
+                    <button onclick="addCardToList()">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
