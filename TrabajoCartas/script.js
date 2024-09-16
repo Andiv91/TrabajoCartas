@@ -18,6 +18,15 @@ const availableCards = [
 // Lista que contiene solo las cartas digitadas por el usuario
 let cardData = [];
 
+// Datos iniciales del JSON
+const initialCards = [
+    {"numero": "1", "carta": "As de Diamantes", "cantidad": 0},
+    {"numero": "2", "carta": "2 de Diamantes", "cantidad": 0},
+    {"numero": "3", "carta": "3 de Corazones", "cantidad": 0},
+    {"numero": "4", "carta": "4 de Corazones", "cantidad": 0},
+    {"numero": "5", "carta": "5 de Corazones", "cantidad": 0}
+];
+
 const cardContainer = document.getElementById('card-container');
 const tableBody = document.querySelector('#card-table tbody');
 
@@ -30,6 +39,10 @@ function loadCards() {
         img.onclick = () => incrementCard(card.numero);
         cardContainer.appendChild(img);
     });
+
+    // Inicializar las primeras 5 cartas desde el JSON en la lista
+    cardData = [...initialCards];
+    updateCardsAndTable();
 }
 
 function addRowToTable(numero, carta, cantidad) {
